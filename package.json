@@ -1,0 +1,28 @@
+{
+  "name": "nodejs-hw-mongodb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iryna-Ozerova/nodejs-hw-mongodb.git"
+  },
+  "keywords": [],
+  "author": "Irina Ozerova <marta.ilyashenko@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Iryna-Ozerova/nodejs-hw-mongodb/issues"
+  },
+  "homepage": "https://github.com/Iryna-Ozerova/nodejs-hw-mongodb#readme",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.2.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.3",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2"
+  }
+}
