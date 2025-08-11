@@ -5,8 +5,8 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import { getEnvVar } from './utils/getEnvVar.js';
 import contactsRouter from './routers/contacts.js';
-import { errorHandler } from './middlevares/errorHandler.js';
-import { notFoundHandler } from './middlevares/notFoundHandler.js';
+import { errorHandler } from './middlewares/errorHandler.js';
+import { notFoundHandler } from './middlewares/notFoundHandler.js';
 
 dotenv.config();
 
