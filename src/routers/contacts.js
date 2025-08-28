@@ -8,7 +8,7 @@ import {
   upsertContactController,
 } from '../controllers/contacts.js';
 import { validateBody } from '../middlewares/validateBody.js';
-import { isValidId } from '../middlewares/isValidId.js';
+import { isValidId } from '../middlewares/isValid.js';
 import {
   createContactSchema,
   updateContactSchema,
