@@ -1,7 +1,7 @@
 tags:
   - Contacts
 summary: Create contact
-operationId: createStudent
+operationId: createContact
 description: 'Create a contact with payload'
 security:
   - bearerAuth: []
@@ -27,7 +27,7 @@ requestBody:
             type: string
             example: +380637766555
           email:
-            description: "Student's email"
+            description: 'Contact email'
             type: string
           isFavourite:
             description: 'Contacts average mark isFavourite. Should be between true or false'
@@ -40,7 +40,7 @@ requestBody:
           photo:
             description: 'Link to contact photo'
             type: string
-            example: https://res.cloudinary.com/uqwgdu/image/upload/image.png
+            format: binary
 responses:
   '201':
     description: Creates a contact

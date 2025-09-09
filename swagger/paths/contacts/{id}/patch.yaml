@@ -12,6 +12,35 @@ parameters:
     schema:
       type: string
       example: '65ca67e7ae7f10c88b598384'
+requestBody:
+  content:
+    multipart/form-data:
+      schema:
+        type: object
+        properties:
+          name:
+            description: 'Contact name'
+            type: string
+            example: 'John Doe'
+          phoneNumber:
+            description: 'Contact phone'
+            type: string
+            example: +380637766555
+          email:
+            description: 'Contact email'
+            type: string
+          isFavourite:
+            description: 'Contacts average mark isFavourite. Should be between true or false'
+            type: boolean
+            example: true
+          contactType:
+            description: 'Contact average type of phone.'
+            type: string
+            enum: ['work', 'home', 'personal']
+          photo:
+            description: 'Link to contact photo'
+            type: string
+            format: binary
 responses:
   '200':
     description: 'Patch contact by id'
