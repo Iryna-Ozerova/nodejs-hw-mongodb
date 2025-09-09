@@ -1,0 +1,41 @@
+type: object
+required:
+  - _id
+  - userId
+  - name
+  - phoneNumber
+  - email
+  - isFavourite
+  - contactType
+  - photo
+properties:
+  _id:
+    description: 'Contact id'
+    type: string
+    example: 65e4decdd286b30065d54af9
+  userId:
+    description: 'User id'
+    example: 65e4decdd286b30065d54af9
+  name:
+    description: 'Contact name'
+    type: string
+    example: 'John Doe'
+  phoneNumber:
+    description: 'Contact phone'
+    type: string
+    example: +380637766555
+  email:
+    description: 'Contact email'
+    type: string
+  isFavourite:
+    description: 'Contacts average mark isFavourite. Should be between true or false'
+    type: boolean
+    example: true
+  contactType:
+    description: 'Contact average type of phone.'
+    type: string
+    enum: ['work', 'home', 'personal']
+  photo:
+    description: 'Link to contact photo'
+    type: string
+    example: https://res.cloudinary.com/uqwgdu/image/upload/image.png
