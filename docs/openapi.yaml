@@ -15,7 +15,7 @@ tags:
 
 servers:
   - url: http://localhost:3000
-  # - url: на задеплоєний сайт
+  - url: https://contacts-app-b3cj.onrender.com
 
 paths:
   /contacts:
